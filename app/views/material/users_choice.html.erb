@@ -1,0 +1,39 @@
+<html>
+<head>
+  <title>MyShop</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+<h3>Types of Materail</h3></br>
+<% @counter=0 %>
+<% @no_of_column = 2 %>
+<% k=0 %>
+
+	<table border='1'>
+		<%if @selected_dress != nil%>
+		
+		    <% @no_of_row = @selected_dress.size/3 + 1%>
+		        <%for i in 0...@no_of_row %>
+				  
+				  <tr>
+					<%for j in 0..@no_of_column %>					 	
+					 	<% if(@selected_dress[k] != nil)%>
+							<td><%= link_to(image_tag(@selected_dress[k].image_name,:size => "300x250"),:id=>@selected_dress[k].id,:action=>'add_to_cart') %>
+						    </td>
+						        <%k += 1%>
+					    <%end%>
+					<%end%>
+		    	  </tr>
+
+		        <%end%>
+        <%else%>
+            <h4>Selected Type of Material Not Available</h4>
+	    <%end%>
+	</table>
+
+	</body>
+</html>

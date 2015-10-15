@@ -1,0 +1,24 @@
+
+<%= form_for @users_choice1, url: material_daily_transact_path do |f|%>
+		
+		 <div id="maindiv">
+		
+			<div id = "selected-product" style="padding-left:20">
+			   <%image_tag(@users_choice.image_name,size: "320x400")%>
+			   <%=f.hidden_field :image_name,:value=>@users_choice.image_name%>
+			</div>
+
+			<div id="product-specification">
+				Actual Proudct Price :<%=@users_choice.price%>	
+		        <%=f.hidden_field :price,:value=>@users_choice.price%>
+		        <p><%=f.label 'Sold_At:'%>
+		        <%=f.text_field :sold_price,:size=>"10" %></p>
+		        <%=f.hidden_field :transact_date,:value=>Time.now%>
+		        <%=f.hidden_field :Type,:value=>@users_choice.Type %>
+		        <%=f.hidden_field :subtype,:value=>@users_choice.subtype%>
+		        <%=f.submit 'Save Product'%>
+			</div>
+
+		</div>
+
+<%end%>

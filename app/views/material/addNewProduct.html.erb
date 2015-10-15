@@ -1,0 +1,62 @@
+<script>
+
+function updateSubtype()
+  {
+   var myselect = $("#stocktype option:selected").text();
+    // alert(myselect);
+    $.ajax({
+        url:'SubtypeUpdate', 
+        type: 'get',
+        data: {first_event: myselect},      
+    });
+  }
+
+</script>
+
+<body>
+<center><h3>Add New Product</h3></center>
+  <div id="add_new_product">
+    
+    <%= form_for :@material, url: material_saveNewProduct_path,:html => { :multipart => true } do |f| %>
+
+        <div id="stocktype" style="margin-top:5px; margin-left:10px;">
+        <%=f.label :Type%>
+        	<%=f.collection_select :Type,Type.all,:Type,:Type ,{:prompt=>'Select One'},:onchange=>"updateSubtype();"%>
+        </div>
+    
+    <div id="layer5" style="margin-top:5px; margin-left:10px;">
+        <div id="layer6;">
+          <%=f.label :subtype%>
+        </div>
+        
+        <div id="stocksubtype" >
+          <select><option value="">please select Subtype</option></select>
+        </div>
+
+    </div>
+    
+    </br><div id="size" style="margin-top:15px; margin-left:10px;">
+      <%=f.label :size%>
+      <%=f.collection_select :size,Size.all,:size,:size ,{:prompt=>'Select one'}%>
+    </div>
+
+    <div style="margin-top:5px; margin-left:10px;">
+      <%=f.label :price%>
+      <%=f.text_field :price ,:value=>''%>        
+    </div>
+
+    <div style="margin-top:5px; margin-left:10px;">
+      <%=f.label :avatar%>
+      <%=f.file_field :avatar%>
+      <%#=%>
+    </div>
+    
+    <div id="save_button" style="margin-top:5px; margin-left:10px;">
+        <%= f.submit "SAVE"%>
+    </div>
+    <%end%>
+
+  </div>
+
+</body>
+

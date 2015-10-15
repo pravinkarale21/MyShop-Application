@@ -1,0 +1,188 @@
+#typecloth{
+	float:left;
+	position:absolute;
+	height:60px;
+	width:200px;
+	/*background-color: red;*/
+	border: 0.5px solid black;
+}
+
+#sub_typecloth{
+	position:absolute;
+	height:60px;
+	width:200px;
+	margin-left:400px;
+	/*background-color: red;*/
+	border: 0.5px solid black;
+}
+
+#user_input_button{
+	margin-top:20px;
+	margin-left: 700px;
+	height:50px;
+	width:350px;
+}
+
+#header{
+	/*margin-top:50px;*/
+	height:70px;
+	width:100%;
+	background-color:#E65940;
+}
+
+#thinheader{
+	height:40px;
+	width:100%;
+	background-color:#F5BDB3;
+}
+
+#material{
+	margin-top:80px;
+	position:absolute;
+	height:600px;
+	width:100%;
+	/*border: 2px solid black;*/
+}
+
+#userschoice{
+	margin-left :600px;
+	margin-top:10px;
+	position:absolute;
+	height:40px;
+	width:400px;
+	/*background-color:red; */
+}
+
+#selected-product{
+	height:400px;
+	width:350px;
+	margin-left:30px;
+	margin-top: 60px;
+	margin-bottom: 40px;
+	/*border: 0.5px solid black;*/
+	float: left
+}
+
+.style_image{
+	padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+#maindiv{
+	height:600px;
+	width:100%;
+	border: 0.5px solid black;	
+	/*background-color: red*/
+}
+
+#product-specification{
+	height:140px;
+	width:190px;
+	margin-right: 150px;
+	margin-top:120px;
+	float: right;
+	border:0.5px solid black;
+}
+#success_msg{
+	height:140px;
+	width:190px;
+	margin-left:280px;
+	margin-top:20px;
+}
+#dateselection{
+	height:200px;
+	width:300px;
+	margin-left:350px;
+	margin-top:100px;
+	/*border:0.5px solid black;*/
+}
+
+table#t01, th, td {
+    border: 1px solid black;
+   background-color: #f1f1c1; 
+   text-align: center;
+}
+th, td {
+    padding: 7px;
+}
+#trans_hystory{
+	height:380px;
+	width:750px;
+	position: absolute;
+	margin-top: 60px;
+	margin-left:180px;
+    /*border:0.5px solid black;	*/
+}
+
+#pagination{
+	height:40px;
+	width:300px;
+	position: absolute;
+	margin-top:40px;
+	margin-left:300px;
+}
+
+#title{
+	height:40px;
+	width:550px;
+	margin-left:180px;	
+	margin-top: 10px;
+	/*background-color:red; */
+}
+
+#dashborad_btn{
+    height:30px;
+	width:50px;
+	margin-left:270px ; 
+	margin-top: 10px ; 
+}
+
+#error_prompt{
+	height:50px;
+	width:500px;	
+	margin-top:100px;
+	margin-left:250px ;
+}
+
+#add_new_product{
+	height:300px;
+	width:400px;	
+	margin-top:100px;
+	margin-left:300px ;	
+	border:0.5px solid black;		
+}
+#stocksubtype{
+	position: absolute;
+	width: 200px;
+	height: 41px;
+	z-index: 2;
+	left: 65px;
+	top: 0px;
+	/*background-color:red;*/
+}
+#singlerow{
+	height:30px ;
+	width:100px ;
+	/*float:right;*/
+	background-color:red
+}
+#layer5{
+	position: absolute;
+	width: 300px;
+	height: 44px;
+	z-index:  1;
+	left: 300px;
+}
+
+#layer6{
+	position: absolute;
+	width:80px;
+	height: 40px;
+	z-index: 1;
+	left: 0px;
+	top: 0px;
+	background-color:red;
+}
+

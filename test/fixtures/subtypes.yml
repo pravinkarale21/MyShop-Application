@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  subtype: MyString
+  typeid: 1
+
+two:
+  subtype: MyString
+  typeid: 1

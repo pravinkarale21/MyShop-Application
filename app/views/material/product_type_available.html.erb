@@ -1,0 +1,32 @@
+
+<h3>Types of Materail</h3></br>
+<% @counter=0 %>
+<%@no_of_column = 2 %>
+<% k=0 %>
+
+	<table border='1'>
+		<%if @product_type != nil%>
+	
+	<%p "------------------->>>>>>123"%>		
+	<%p @product_type%>
+	<%p "------------------->>>>>>123"%>	
+	
+	  <%p @no_of_row = @product_type.size%>
+	  
+	    <%for i in 0...@no_of_row %>  
+			<tr>
+				<%for j in 0..@no_of_column %>
+				  <td>
+				  	<%if k < @product_type.size %>
+				  <%= @product_type[k].Type%>
+				  	<%= link_to(image_tag(@product_type[k].avatar,:size => "250x280"),:id=> @product_type[k].id,:action=>'users_choice')%>
+				  	<%end%>
+				  </td>
+			   <%k += 1%>
+			   <%end%>
+	    	</tr>
+	    <%end%>
+	    <%end%>
+	</table>
+
+	<%#=button_to "cancel" ,:action=>'dashboard'%>
